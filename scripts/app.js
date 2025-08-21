@@ -6,7 +6,8 @@ let myname = [
     "this is my name",
     "Whatever I want",
     "This is super code",
-    "Blood on that bus"
+    "Blood on that bus",
+    "nooo - piper "
 ];
 
 let getRandomIndex = function (a) {
