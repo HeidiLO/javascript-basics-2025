@@ -1,4 +1,4 @@
-// This will be our first javascript file
+// This will be our last javascript file
 
 let mine = document.getElementById("My name");
 let output = document.getElementById("name");
