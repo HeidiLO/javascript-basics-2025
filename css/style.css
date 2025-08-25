@@ -10,6 +10,9 @@
 /* Body styles */
 /* Full viewport width and height, centered content */
 body {
+
+	background-color: rgb(6, 12, 85);
+	color: whitesmoke;
 	width: 100vw;
 	height: 100vh;
 	display: flex;

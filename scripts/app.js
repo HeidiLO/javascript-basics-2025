@@ -7,7 +7,8 @@ let myname = [
     "Whatever I want",
     "This is super code",
     "Blood on that bus",
-    "nooo - piper "
+    "nooo - piper ",
+    "oh look there is a blimp"
 ];
 
 let getRandomIndex = function (a) {
@@ -17,7 +18,7 @@ let getRandomIndex = function (a) {
 let getRandomWord = function (a) {
     return a[getRandomIndex(a)];
 };
-let generateName = function (a, h, v, adj, n) {
+let generateName = function (a, ){
     let mynames =
         getRandomWord(a) +
         " "
