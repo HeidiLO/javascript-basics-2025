@@ -43,7 +43,8 @@ let myname = [
     "nooo - piper ",
     "oh look there is a blimp"
 ];
-
+const Ahhhh = "I am doing what I am supposed to"
+console.log(Ahhhh)
 let youClickedMe = [
     "look what you did",
     "This is your fault",
