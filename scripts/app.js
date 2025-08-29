@@ -1,7 +1,7 @@
 // This will be our last javascript file
 console.log ("yes I did my work today....");
 console.log ("don't you believe me?");
-let username = "I totaly did what I am supposed to do";
+let username = "I totaly did what I am supposed to do, why are you looking at me like that";
 console.log ("please belive me");
 username= "no i'm not lying ";
 let beliveMe = [
