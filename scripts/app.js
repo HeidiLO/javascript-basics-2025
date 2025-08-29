@@ -57,6 +57,9 @@ let youClickedMe = [
     "You found out the truth now we have to take care of you",
     "Shh this won't be that bad",
     "You will be okay this is totally normal and fine",
+    "Click me again I dare you ",
+    "This will be fun at least for me",
+    "Now you have to find out what you did wrong and solve "
 ]
 
 let generateHA = function () {
