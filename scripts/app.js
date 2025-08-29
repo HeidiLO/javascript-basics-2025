@@ -30,6 +30,7 @@ let generateExcuse = function (a) {
 };
 let IDidMyWork = true;
 let IAmLying = false;
+console.log ("See even the code know that I am not lying see... Am I lying?", IAmLying, "And also that I did my work is ", IDidMyWork);
 console.log (username);
 console.log (generateExcuse(beliveMe));
 let mine = document.getElementById("My name");
@@ -81,4 +82,8 @@ mine.addEventListener("click", function () {
     let name = generateName(myname, "is");
     output.textContent = name;
 });
-
+let profile = {
+    truth: username,
+    Lie: "This whole thing has been a lie"
+};
+console.log (profile);
