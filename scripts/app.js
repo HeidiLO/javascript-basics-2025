@@ -74,8 +74,7 @@ MINE.addEventListener("click", function () {
 let generateName = function (a, ){
     let mynames =
         getRandomWord(a) +
-        " "
-    console.log(mynames);
+    ""
     return mynames;
 };
 mine.addEventListener("click", function () {
