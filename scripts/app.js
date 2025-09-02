@@ -86,6 +86,37 @@ mine.addEventListener("click", function () {
 });
 let profile = {
     truth: username,
-    Lie: "This whole thing has been a lie"
+    Lie: "This whole thing has been a lie",
+    Truth : "I have never lied befrore"
 };
 console.log (profile);
+
+let k = document.getElementById("k-pop");
+let ks = [
+ "Hey, hey, Hey hey, HeyDon't want you, need yo Yeah, I need you to fill me up 마시고 마셔 봐도 성에 차지 않아 Got a feeling that, oh, yeah
+You could be everything that
+That I need , taste so sweet 
+Every sip makes me want more, yeah"
+
+Don't want you, need you
+Yeah, I need you to fill me up
+마시고 마셔 봐도
+성에 차지 않아
+Got a feeling that, oh, yeah
+You could be everything that
+That I need , taste so sweet 
+Every sip makes me want more, yeah
+
+Lookin' like snacks 'cause you got it like that
+Take a big bite, want another bite, yeah
+너의 모든 걸 난 원해, 원해, 원해
+너 말곤 모두 뻔해, 뻔해, 뻔해
+When you're in my arms, I hold you so tight (So tight)
+Can't let go, no, no, not tonight
+
+지금 당장 날 봐 시간 없잖아
+넌 내꺼야 이미 알고 있잖아
+'Cause I need you to need me
+I'm empty, you feed me so refreshing
+My little soda pop"
+];
