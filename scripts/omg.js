@@ -111,3 +111,19 @@ k.addEventListener("click", function () {
     let ok = generateK(ks, );
     output.textContent = ok;
 });
+let stay = document.getElementById("strayKids");
+let stray = [
+    "Hip-hip (Hooray) Hip-hip (Hooray) Hip-hip, hip-hip Yuh, yuh, yuh, yuh We're moving forward with maximum power And we're gonna dominate, pop it 장식하지, big news, topic 경험치는 수많은 trophy No one, nobody can stop me 수많은 억까는 도움닫기 Jump up, jump up Like a pop-up, toaster, lift Working off time That ratio got us going worldwide (Worldwide) Thirsty day and night They put us in the desert but we survive Busy giving our light Unlike them, we're getting all the spotlight Listen to the war cry Karma, karma, karma, karma Hip-hip (Hooray) Hip-hip (Hooray) Hip-hip, hip-hip Karma, karma, karma, karma Ceremony Hip, hip, hip, hip, hip, hip, hip (Hooray) Woah, ceremony Hip, hip, hip, hip, hip, hip, hip (Hooray) We did it, 소리 질러, wow Slide, 반지 kiss, muah 받아 내 상 마치 부케 봐라 내 두 손은 두둑해 바쁠 때 눈코 뜰 새가 없대 But that's okay, 소감을 또 준비해 I feel like 우주 붕, 붕, 붕 (Ho) You and I, let's go celebrate 이 상태는 엄청나 삐끗삐끗 터지는 emergency We don't care, show you 나 버젓이 여기저기, look at our paradise 어디까지 갈지 예상 밖이야 시끌시끌 북적해 우리 근처는 언제나 소음 발생이야 Working off time That ratio got us going worldwide (Worldwide) Thirsty day and night They put us in the desert but we survive Busy giving our light Unlike them, we're getting all the spotlight, yeah Listen to the war cry Karma, karma, karma, karma Hip-hip (Hooray) Hip-hip (Hooray) Hip-hip, hip-hip Karma, karma, karma, karma Ceremony Hip, hip, hip, hip, hip, hip, hip (Hooray) Woah, ceremony Hip, hip, hip, hip, hip, hip, hip (Hooray) Yeah, we gon' celebrate 'cause we got good Karma, karma, karma, karma Calmer, calmer, calmer, that's our Karma, karma, karma, karma Yeah, we gon' celebrate 'cause we got good Karma, karma, karma, karma Calmer, calmer, calmer Oh, ceremony",
+    "사건 발생 잊지 못할 사건 치명적인 매력에 홀라당 빠져 자꾸 나를 자극하는 넌 출처가 없는 문제야 풀어야 할 숙제야 Can I be your boyfriend? 너를 대하는 태도 거짓 하나 없어 no cap 너에게 하고 싶은 말로 가득 찼어 my case 완벽함 앞에 어떤 말로도 부족해 You got me losing patience 걷잡을 수 없는 emotion 떠올라 네 모습 I never feel alright 수많은 감정이 충돌해 왜 이래 Rolling in the deep inside my head You got me bad 무장해제 신속하게 네게로 moving, on my way Why do I keep getting attracted 자석 같이 끌려가 I cannot explain this reaction 이것밖에 143 Why do I keep getting attracted 네 모습만 떠올라 I cannot explain this emotion 143 I LOVE YOU A B C D E F G I Wanna send my code to you 8 letters is all it takes And I'm gonna let you know oh 너 말곤 높이 쌓아뒀지 barricade (barricade) 원하는 대로 불러도 돼 Code name (call me baby) 욕심이래도 되고 싶어 soulmate (whoo) 이 맘은 점점 더 upgrade 'cause You got me losing patience 걷잡을 수 없는 emotion 떠올라 네 모습 I never feel alright 수많은 감정이 충돌해 왜 이래 Rolling in the deep inside my head You got me bad무장해제 신속하게 네게로 moving, on my way Why do I keep getting attracted 자석 같이 끌려가 I cannot explain this reaction 이것밖에 143 Why do I keep getting attracted 네 모습만 떠올라 I cannot explain this emotion 143 I LOVE YOU Heartbeat 나의 모든 상태 지금 위기 (위기) 너의 모습 ain't no 'false' 나의 속맘 다시 repeat (repeat) Walking next to you but I'm fallin 더 깊게 빠져들어 끌리지 You're pulling me deeper and deeper I try to get out but I can't stop Can I be the one? Yeah I'll be the one 무모하게 도전해 오그라드는 표현 머릿속이 띵하고 무감정은 손절 Moving, I'm on my way Why do I keep getting attracted 네 모습만 떠올라 I cannot explain this emotion 143 I LOVE YOU Why do I keep getting attracted 자석 같이 끌려가 I cannot explain this reaction (이것밖에) I'm gonna let you know (know) That I'm just gonna go (go) And hold you so I'm never letting go I'm gonna let you know (know) That I'm just gonna go (just go) Yeah 난 너에게로 지금 출발합니다 바로 like I'm Never letting go oh I cannot explain this emotion 143 I LOVE YOU",
+
+];
+let generates = function (a, ){
+    let mk =
+        getRandomWord(a) +
+    ""
+    return mk;
+};
+stay.addEventListener("click", function () {
+    let ok = generateK(stray, );
+    output.textContent = ok;
+});
