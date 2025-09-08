@@ -11,5 +11,12 @@ const shoot = function (weapon){
 };
 
 const compWepon = function (){
-
+    const rand = Math.floor(Math.random()*3);
+    if (rand == 0){
+        return ROCK;
+    }
+    if (rand == 1){
+        return PAPER;
+    }
+    return SCISSORS;
 };
