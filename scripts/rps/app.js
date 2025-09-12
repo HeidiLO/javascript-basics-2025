@@ -5,13 +5,39 @@ const PAPER ="paper ";
 const SCISSORS = "scissors";
 const HAHAHA = "I win and you lose "
 let omg = document.getElementById("Yes");
-
+const tieCount = "0";
+let IWON = 0;
+const pl = "0";
 const shoot = function (weapon){
-    console.log("player picked", weapon);
+    let text = `You have picked ${weapon}. `;
+    console.log("You have picked", weapon);
 
-    let computer = compWepon();
-    console.log ("I have picked",computer)
+      let computer = compWepon();
+    console.log ("I have picked",computer);
+    text = text + `I have picked ${computer}. `;
+    let iwin = answer(weapon,computer);
+    console.log ("The answer to the battle is", iwin);
+    let winner = "";
+    if(iwin?.isTie == true){
+        winner = "I win!!!";
+        IWON += 1;
+    }else if (iwin?.playWin){
+        winner = "I still win!!!";
+        IWON += 1;
+    }   else if (iwin?.iWIn){
+         winner = "I will always win!!!!!!";
+         IWON += 1;
+    };
+
+     text += `${winner} because I said so and you can't argue with me but also ${iwin?.des}. Also I have won ${IWON} times becuase I am better than you in every way possible!!!!!`;
+
+    aftermathElement.textContent = text
+
+    console.log("I have won", IWON, "times because I am better than you in every way");
 };
+
+
+
 
 const compWepon = function (){
     const rand = Math.floor(Math.random()*4);
@@ -69,6 +95,11 @@ function answer(p,c){
         result.des = "Hahaha you suck";
         return result;
     };
+    if (p == PAPER && c == ROCK){
+        result.iWIn = true;
+        result.des = "I told you I would win!!!";
+        return result;
+    };
     if (p == ROCK && c == HAHAHA){
         result.iWIn = true;
         result.des = "Hahaha you suck";
@@ -79,4 +110,11 @@ function answer(p,c){
         result.des = "Hahaha you suck";
         return result;
     };
+};
+
+/**@type {HTMLElement} */
+//@ts-ignore checking for null bellow 
+let aftermathElement = document.getElementById("aftermath");
+if (aftermathElement == null){
+     throw "aftermath is no good";
 };

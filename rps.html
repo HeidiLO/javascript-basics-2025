@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+	body{
+		background-color: black;
+		color: rgb(136, 0, 0);
+		font-family: fantasy;
+		padding: 150px
+	};
+	button {
+		color: rgb(136, 0, 0);
+		background-color: black;
+		size: 120px;
+	};
+</style>
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +23,12 @@
 <body>
 	<h1 style="color: hsl(0, 100%, 18%)">Rock Paper Scissors </h1>
 	<p><a href="index.html">Finaly you are coming home ^^</a></p>
+	<div>
 	<button onClick = "shoot(ROCK)">Rock</button>
 	<button onClick ="shoot(PAPER)">Paper</button>
-	<button onClick = "shoot(SCISSORS)">Scissors</button>
-	<div id ="Yes">Results</div>
+	<button onClick = "shoot(SCISSORS)">Scissors</button></div>
+	<div 
+	id ="aftermath">Results</div>
 	<script src="scripts/rps/app.js"></script>
 </body>
 </html>
