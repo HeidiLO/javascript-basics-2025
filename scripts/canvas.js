@@ -17,8 +17,8 @@ let time = 0;
 let box = {
     x: 0,
     y: 0, 
-    xDir: 1,
-    yDir: 1,
+    xDir: 5,
+    yDir: 5,
     width: 100,
     height : 2,
     draw: function(){
@@ -37,11 +37,11 @@ let box = {
         if (top < 0){
             this.yDir = 1;
         } else if (bottom > HEIGHT){
-            this.yDir = - 1;
+            this.yDir = - 20;
         }else if (left < 0){
-            this.xDir = 1;
+            this.xDir = 5;
         } else if (right> WIDTH){
-            this.xDir = - 1;
+            this.xDir = - 10;
         }
 
         this.x += this.xDir;
