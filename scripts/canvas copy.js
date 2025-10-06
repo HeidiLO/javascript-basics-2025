@@ -65,14 +65,19 @@ let box4 = {
         let bottom = this.y + this.height;
         let left = this.x;
         let right = this.x + this.width;
+
         if (top < 0){
             this.yDir = 1;
+
         } else if (bottom > HEIGHT){
             this.yDir = - 20;
+
         }else if (left < 0){
             this.xDir = 5;
+
         } else if (right> WIDTH){
             this.xDir = - 10;
+
         }
 
         this.x += this.xDir;
