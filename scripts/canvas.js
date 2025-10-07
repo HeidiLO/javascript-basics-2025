@@ -878,8 +878,8 @@ class Box{
         this.y = y;
         this.color = color;
         this.speed = 15;
-        this.width = 100;
-        this.height = 2;
+        this.width = 1;
+        this.height = 0.02;
         this.xDir = 5;
         this.yDir =5;
         this.output = Output
@@ -902,14 +902,16 @@ class Box{
         let look = generateKt(thusy, );
         if (top < 0){
             this.yDir = 10;
-            this.width /= 2;
-            this.height/= 2;
+            this.width = this.width * 0.5;
+            this.height = this.height * 0.5;
+            // this.y = 0;
              // @ts-ignore
           //  this.output.textContent = look;
-        } else if (bottom > HEIGHT){
+        } else if (bottom > CANVAS.height){
             this.yDir = - 30;
-            this.width *= 2;
-            this.height *= 2;
+            this.width = this.width * 2;
+            this.height = this.height *2;
+            // this.y= CANVAS.height - this.height;
             // @ts-ignore
             //this.output.textContent = look;
         }else if (left < 0){
@@ -918,12 +920,12 @@ class Box{
             this.height --;
             // @ts-ignore
             this.output.textContent = look;
-        } else if (right> WIDTH){
+        } else if (right> CANVAS.width){
             this.xDir = - 20;
             // @ts-ignore
             //this.output.textContent = look;
-            this.width *= 1.5;
-            this.height *=1.5;
+            this.width = this.width * 1.5;
+            this.height = this.height * 1.5;
         }
 
         this.x += this.xDir;
@@ -959,8 +961,8 @@ let colors = [
 for (let i =0; i <= 15; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
-    box.x = Math.random() * WIDTH - 100;
-    box.y = Math.random() * HEIGHT -2;
+    box.x = Math.random() * CANVAS.width - 100;
+    box.y = Math.random() * CANVAS.height -2;
     box.yDir = Math.floor(Math.random()* 5 + 5);
     box.xDir = Math.floor(Math.random()* 5 + 5);
     boxes.push(box);
@@ -970,7 +972,7 @@ for (let i =0; i <= 15; i++){
 //CTX.fill();
 
 function drawloop(){
-    CTX.clearRect(0,0,WIDTH,HEIGHT)
+    CTX.clearRect(0,0,CANVAS.width,CANVAS.height)
     boxes.forEach((b)=> {
         b.draw();
         b.update();
