@@ -163,6 +163,10 @@ let TXTS = [
 "너를 만나 몰랐던 네 맘의 의미를 배워 가 (배워 가) All day and night (Night) 세상이 온통 너야 내 시선들의 춤 끝엔 늘 your ways 세상의 장면 중 네게만 반응해 단어를 뺏긴 듯 (뺏긴 듯) lost in translation (Lost in translation) 알잖아 이건 언어 이상의 signs, ah  어린애처럼 (Yeah), 가나다라 배워 가는 나, yeah, yeah I'm down for you (I'm down for you), 생각해 종일 너만, mm Baby, just tell me, I can't read your mind What's your love language? What's your love language? 너를 더 알고 싶어 What's your love language? 너를 말하고 싶어 Tea-tea-teach me All about your love language (Love language?) 점점 깊이 (More) 알고 싶어 너의 language (What's your love language?) Yeah, 살짝 스친 손도 (손도) 익숙한 단어도 (Your world) 다른 뜻이 있을까 고민에 빠져 또 (Oh-oh) 연구해 you-ology, 너에 대한 A to Z 의미를 사전처럼 해독하고 싶어, baby 너의 이름이 (Yeah) 낙원의 또 다른 말 같아, yeah, yeah (Ah-ah) I'm down for you (I'm down for you, woo), 생각해 종일 너만 (Mm) Baby, just tell me, I can't read your mind (Ooh-ooh) What's your love language? (Language, ooh) What's your love language? 너를 더 알고 싶어 (Want to ya, your love like that) What's your love language? 너를 말하고 싶어 Lonely, 길 잃은 나의 night Promise, 날 이끌어 준 light My everything, 들려줄게 네게 (All about love, babe) What's your love language? What's your love language? 너를 다 알고 싶어 (싶어) What's your love language? (Language) 너를 말하고 싶어 Tea-tea-teach me All about your love language (Love language) 점점 깊이 (More) 알고 싶어 너의 language (Love language) Tea-tea-teach me All about your love language (All about your love language; Love language) 점점 깊이 (Oh-oh) 알고 싶어 너의 language (What's your love language?)",
 "Ooh-ooh Yeah 네 눈빛 속에 거꾸로 비친 my face Keep your eyes on me (Ah-ah-ah) Baby, don't freeze 정반대의 something 본능이 알아봤지 달아오른 skin (Ah-ah-ah) 너 말곤 쉿 Uh, 너와 내 두 발이 서로 다른 세상에 묶여 닿을 수가 없대도 That's what I like 어려운 game 궤도를 비껴, I don't give a shit Baby, girl, let's get freaky 중력을 비웃 입술이 닿을 듯 말 듯 우린 더 자유로워 Baby, I'll make it easy 뒤집힌 그대로 나의 아랫입술이 너의 윗입술로 (입술로)  Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Hey, hey 포개지는 네 입술 (Your lips) 그 위에서, swing groove (Groovin') 마치 N과 S극 (Like that) 떼어 내지 못해 착붙 몸은 그냥 가는 대로 가득해 오감은 너로 뭘 해도 남들관 달러? Sip it like an affogato 그렇게 우린 탐해 서로를, yeah Uh, 어떤 영화 같지 서로 다른 중력쯤 좀 더 극적인 장치일 뿐 It's no surprise Don't need no changes 내 모습 그대로 입 맞출게 Baby, girl, let's get freaky 중력을 비웃고 입술이 닿을 듯 말 듯 우린 더 자유로워 Baby, I'll make it easy 뒤집힌 그대로 나의 아랫입술이 너의 윗입술로 (입술로) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss) Upside down, upside down (Kiss, kiss)",
 "We do it for love 잊지 말아 forever Still, we do it for love 두려워 말자 together We're beautiful strangers (Oh)  너의 이름을 불러 (불러) 마치 아이가 엄마를 찾듯 목소리는 점점 커져 (커져) 네가 건넨 힘을 따라서 네가 날 불러 날 깨워줬듯 이제 널 불러 callin' our heaven 서로를 구원해 준 이 순간 이 순간을 잊지 마 We do it for love 잊지 말아 forever, still We do it for love (Love) 두려워 말자 together, you 너의 이름을 불러 이 순간이 너무 아름다워 영원의 약속 주문이 풀린 세계 속 (-계 속) We're beautiful strangers We're beautiful strangers (Ooh) We're beautiful strangers 이상하면서도 아름다운걸 (다운걸) 깨진 유리조차 반짝여 보여 (Oh) 네 꺾인 날개와 내뿔 흉터는 마치 타투 (Yeah) 우리 사랑의 증거, oh 네 등의 흉터에 입을 맞춰 (입을 맞) 또 한 번 너와 그리는 heaven (Ooh) 세상이 우릴 다 비웃어도 두렵지 않을 이유 We do it for love (Love) 잊지 말아 forever (Ever), still We do it for love (For love) 두려워 말자 together (Together), you 너의 이름을 불러 이 순간이 너무 아름다워 영원의 약속 주문이 풀린 세계 속 We're beautiful strangers (Oh, oh) We're beautiful strangers (Beautiful strangers) (Ooh) We're beautiful strangers",
+"You can be my ghost girl You can take my soul, girl 나를 잃은 채 전부 잊을게 real world You can be my ghost girl You can be my ghost girl 내 심장을 틀어쥐어 지배당한 채 나의 모든 걸 넘겨 You can be my ghost girl I feel you 발 닿는 곳 그 어디든 꼭 씐 듯해 너에게 전부 질식할 듯한 감정 너만이 내 숨, 너만이 내 truth You're the one I don't wanna lose 지독하게 열이 올라 오늘도 널 앓아 뒤척여 every night in my bed 환청처럼 울린 alarm 두 눈을 뜬 순간 아른거리는 너의 silhouette You can be my ghost girl You can take my soul, girl 나를 잃은 채 전부 잊을게 real world You can be my ghost girl (Hey-ey-ey) You can be my ghost girl 내 심장을 틀어쥐어 지배당한 채 나의 모든 걸 넘겨 You can be my ghost girl (Hey-ey-ey)  All of my friends 날 보곤 답 없대 And I don't really care, I don't really care 지옥마저 천국일 테니 Baby 함께 있어 주길 I love it nothing gets me scared Darling 너와 함께라면 걸어가 through the dark 미친놈이래도 뭐 어때 너로 인해 숨 쉬는 나 따라가 where you are 어떤 이별조차 초월해 You can be my ghost girl Come and take my soul, girl 영혼을 다 쏟고도 또 건네는 heart You can be my ghost girl (Hey-ey-ey) You can be my ghost girl 나를 잠식해도 오직 너만이 나를 숨 쉬게 한걸 You can be my ghost girl (Hey-ey-ey) Ooh-ooh-ooh-ooh (You can be my ghost girl) Ooh-ooh-ooh-ooh (You can be my ghost girl) I just wanna be with you I just wanna stay with you I just wanna live and die with you You can be my ghost girl",
+"Sunday for, Sunday for us Yeah, alright  Woah 적당히 따사로운 Sun 들뜬 시동을 걸어 너의 최애 playlist, 준비 OK 널 데리러 갈게 날 보며 웃는 널 발견한 그 순간 느리게 시작되는 drive 스쳐 간 옆 차선 고개를 내민 귀여운 강아지랑 인사하는 너  It's like Sunday for, Sunday for us 시간마저 느리게, 느리게 가 잡힐 듯한 풍경과 꿈같은 둘 그 하나하나까지 눈에 담아 깊이 La la la la la la La la la la la la la la La la la Just two of us Sunday for, Sunday for us 구름 위를 살랑살랑 달려 우리만의 driving 바다 갈까? (Go now) 멀면 어때 (Don't care) 오른손엔 (My hand) 네 손이면 돼 차 안은 우리만의 동전 없는 노래방이 돼 엉터리 가사라도 좋아  이렇게 우리 둘만 같이 있다면 매일이 일요일 같아 서두를 거 없어 느긋하게 어차피 목적지는 네 옆의 everywhere It's like Sunday for, Sunday for us 시간마저 느리게, 느리게 가 잡힐 듯한 풍경과 꿈같은 둘 그 하나하나까지 눈에 담아 깊이  눈부신 노을에 이끌려 경로를 벗어나 닿은 곳 Now I know 잘못 든 이 길도 영화 속 한 장면 같은걸 It's like Sunday for, Sunday for us 일요일을 닮은 듯 여유로운 mood 잡힐 듯한 풍경과 꿈같은 둘 그 하나하나까지 눈에 담아 깊이 La la la la la la la la la la la la la la La la la Just two of us Sunday for, Sunday for us 이보다 더 좋을 수는 없지 우리만의 driving",
+"Closer 너를 알고 싶어 깊은 맘의 끝까지 Slow down 너를 되감으며 난 네 거울이 되지 네 움직임에 난 매료돼 너의 말투의 특징, 숨 쉬는 타이밍 까지 같았으면 해  나란히 발을 맞춰, 발을 맞춰 맞닿은 손끝으론 너를 읽어 I wanna dance with you Hold hands with you 마주 댄 심장 위로 너와 함께 추는 춤 오롯이 너에게 날 나에게 널 맡긴 후 하나가 되는 둘 I wanna dance with you (I wanna dance with you) (Hold hands with you) (마주 댄 심장 위로 너와 함께 추는 춤 (오롯이 너에게 날 나에게 널 맡긴 후) (하나가 되는 둘) (I wanna dance with you)  I wanna dance with you I wanna dance with you One step, two steps 다가갈게 더 가까이 네게 맞댄 뺨에 두 심장의 떨림은 하나가 돼 둘만의 무도회, 눈부신 moonlight 영원히 기억될 starry night 나와 함께 발을 맞춰, 발을 맞춰 너조차 몰랐던 널 허락해 줘 I wanna dance with you Hold hands with you 혼자선 출 수 없는 달콤한 이 긴긴 춤 오롯이 너에게 날 나에게 널 맡긴 후 하나가 되는 둘 I wanna dance with you (I wanna dance with you) (Hold hands with you) (혼자선 출 수 없는 달콤한 이 긴긴 춤) (오롯이 너에게 날 나에게 널 맡긴 후) (하나가 되는 둘) (I wanna dance with you) I wanna dance with you I wanna dance with you I wanna dance with you I wanna dance with you) (In step with you) (혼자선 출 수 없는 달콤한 이 긴긴 춤) (오롯이 너에게 날 나에게 널 맡긴 후) (겹쳐진 둘의 숨) (I wanna dance with you) ",
+
 ]
 stay.addEventListener("click", function () {
     let ok = generateK(stray, );
@@ -1043,4 +1047,175 @@ let thus = [
 ttt.addEventListener("click", function(){
         let ok = generateK(thus, );
     output.textContent = ok;
+})
+let han = document.getElementById("felix");
+let felix = [
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Han From Stray Kids",
+    "Bang Chan From Stray Kids",
+    "I.N. From Stray Kids",
+    "Lee Know From Stray Kids",
+    "Hyunjin From Stray Kids",
+    "Seungmin From Stray Kids",
+    "Yeonjun From TXT",
+    "Soobun From TXT",
+    "Beomgyu From TXT",
+    "Tarhyun From TXT",
+    "Huening Kai (Not Carlisle Jr.) From TXT",
+    "S.Coups From Seventeen",
+    "Jeonghan From Seventeen",
+    "Joshua From Seventeen",
+    "Jun From Seventeen",
+    "Hosi From Seventeen",
+    "Wonwoo From Seventeen",
+    "Woozi From Seventeen",
+    "DK From Seventeen",
+    "Mingyu From Seventeen",
+    "The8 From Seventeen",
+    "Seungkwan From Seventeen",
+    "Vernon From Seventeen",
+    "Dino From Seventeen",
+    "Hongjoong From Ateez",
+    "San From Ateez",
+    "Jongho From Ateez",
+    "Seonghwa From Ateez",
+    "Yunho From Ateez",
+    "Yeosang From Ateez",
+    "Mingi From Ateez",
+    "Wooyoung From Ateez",
+    "Kim Ji-seok From Big Ocean",
+    "Lee Chan-yeon From Big Ocean",
+    "PJ From Big Ocean ",
+    "Hyuk From 1verse",
+    "Seok From 1verse",
+    "Nathan From 1verse",
+    "Kenny From 1verse",
+    "Aito From 1verse",
+    "Ni-Ki From Enhypen",
+    "Sunghoon From Enhypen",
+    "Heeseung From Enhypen",
+    "Jake From Enhypen",
+    "Jay From Enhypen",
+    "Jungwon From Enhypen",
+    "Sunoo From Enhypen",
+    "Son Jun-hyung From GHOST9",
+    "Lee Shin From GHOST9",
+    "Lee Kang-sung From GHOST9",
+    "Choi Jun-seong From GHOST9",
+    "Prince From GHOST9",
+    "Lee Woo-jin From GHOST9",
+    "Lee Jin-woo From GHOST9",
+    "Hwang Dong-jiun From GHOST9",
+    "Lee Tae-seung From GHOST9",
+    "Kim Ji-woong From Zerobaseone",
+    "Zhang Hao From Zerobaseone",
+    "Sung Han-bin from Zerobaseone",
+    "Seok Matthew From Zerobaseone",
+    "Kim Tae-rae From Zerobaseone",
+    "Ricky From Zerobaseone",
+    "Kim Gyu-vin From Zerobaseone",
+    "Park Gun-wook From Zerobaseone",
+    "Haru From XLOV",
+    "Hyun From XLOV",
+    "Rui From XLOV",
+    "Wumuti From XLOV",
+    "Kamden From Ampers&One",
+    "Brian From Ampers&One",
+    "Jiho From Ampers&One",
+    "Siyun From Ampers&One",
+    "Kyrell From Ampers&One",
+    "Mackiah From Ampers&One",
+    "Seungmo From Ampers&One",
+    "Seongil From 82major",
+    "Yechan From 82major",
+    "Seongmo From 82major",
+    "Seongbin From 82major",
+    "Seokjoon From 82major",
+    "Dogyun From 82major",
+    "Jin From BTS",
+    "Suga From BTS",
+    "J-Hope From BTS",
+    "RM From BTS",
+    "Jimin From BTS",
+    "V From BTS",
+    "Jung Kook From BTS",
+    "Jun. K From 2PM",
+    "Ok Taec-yeon From 2PM",
+    "Jang Wooyoung From 2PM",
+    "Lee Jun-ho From 2PM",
+    "Hwang Chan-sung From 2PM",
+    "Mark Tuan From Got7",
+    "Jay B From Got7",
+    "Jackson Wang From Got7",
+    "Jinyoung From Got7",
+    "Choi Young-jae From Got7",
+    "BamBam From Got7",
+    "Yugyeom From Got7"
+]
+han.addEventListener("click", function(){
+        let Hyunjin = generateK(felix, );
+    output.textContent = Hyunjin;
+})
+let Hyunjin = document.getElementById("now")
+let hyunjin = [
+    "friend",
+    "bestfriend",
+    "'friend'",
+    "enemy",
+    "wife",
+    "husband",
+    "ex-husband",
+    "ex-wife",
+    "its... complcated",
+    "boyfriend",
+    "girlfriend",
+    "ex-boyfriend",
+    "ex-girlfriend",
+    "partner",
+    "ex-partner",
+    "friend/enemy",
+    "rival",
+    "mom",
+    "dad",
+    "parent",
+    "brother",
+    "sister",
+    "sibling",
+    "step brother",
+    "step sister",
+    "step sibling"
+]
+let LeeKnow = [
+    "a long time",
+    "2 weeks",
+    "15 years",
+    "100 years",
+    "a decade",
+    "3 years",
+    "a day",
+    "4 mintues",
+    "30 seconds"
+]
+let bangChan = ["is going to be your"]
+let In = ["for"]
+let generatet = function (a, h, v, j, n) {
+	let randomAdvice =
+		getRandomWord(a) +
+		" " +
+		getRandomWord(h) +
+		" " +
+		getRandomWord(v) +
+		" " +
+		getRandomWord(j) +
+		" " +
+		getRandomWord(n);
+	console.log(randomAdvice);
+	return randomAdvice;
+};
+Hyunjin.addEventListener("click", function(){
+        let Hyunjin = generatet(felix, bangChan, hyunjin, In, LeeKnow );
+    output.textContent = Hyunjin;
 })
