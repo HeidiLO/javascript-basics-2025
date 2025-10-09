@@ -7,6 +7,9 @@ const CANVAS = document.getElementById("game-canvas");
 //@ts-ignore
 const CTX = CANVAS.getContext("2d");
 const Output = document.getElementById("names");
+const HAN = document.getElementById("Ah");
+const VERSE = document.getElementById("a");
+const ocean = document.getElementById("b");
 const HEIGHT = 500;
 const WIDTH = 890;
 CANVAS.height = HEIGHT;
@@ -19,6 +22,12 @@ let getRandomWords = function (a) {
     return a[getRandomIndexs(a)];
 };
 const generateKt = function (a, ){
+    let mk =
+        getRandomWords (a) +
+    ""
+    return mk;
+};
+const generateKts = function (a, ){
     let mk =
         getRandomWords (a) +
     ""
@@ -872,71 +881,205 @@ const thusy = [
     "Way Less Sad - AJR",
     "Christmas In June - AJR"
 ]
-class Box{
-    constructor(x,y,color, ){
-        this.x = x;
-        this.y = y;
-        this.color = color;
-        this.speed = 15;
-        this.width = 1;
-        this.height = 0.02;
-        this.xDir = 5;
-        this.yDir =5;
-        this.output = Output
-    }
-
-    draw (){
-            CTX.fillStyle = this.color
-    CTX.fillRect (this.x,this.y,this.width, this.height)
-    CTX.fillStyle ="black"
-    CTX.fillRect (this.x+25,this.y,this.width - 50, this.height)
-    CTX.fillStyle = this.color
-    CTX.fillRect (this.x +37.5, this.y, this.width - 75, this.height)  
-    }
-
-    update (){
-        let top = this.y;
-        let bottom = this.y + this.height;
-        let left = this.x;
-        let right = this.x + this.width;
-        let look = generateKt(thusy, );
-        if (top < 0){
-            this.yDir = 10;
-            this.width = this.width * 0.5;
-            this.height = this.height * 0.5;
-            // this.y = 0;
-             // @ts-ignore
-          //  this.output.textContent = look;
-        } else if (bottom > CANVAS.height){
-            this.yDir = - 30;
-            this.width = this.width * 2;
-            this.height = this.height *2;
-            // this.y= CANVAS.height - this.height;
-            // @ts-ignore
-            //this.output.textContent = look;
-        }else if (left < 0){
-            this.xDir = 10;
-            this.width --;
-            this.height --;
-            // @ts-ignore
-            this.output.textContent = look;
-        } else if (right> CANVAS.width){
-            this.xDir = - 20;
-            // @ts-ignore
-            //this.output.textContent = look;
-            this.width = this.width * 1.5;
-            this.height = this.height * 1.5;
-        }
-
-        this.x += this.xDir;
-        this.y += this.yDir;
-    };
-};
-/**@type{ Box[]} */
-let boxes = [];
+const yoongbook = [
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Felix From Stray Kids",
+    "Han From Stray Kids",
+    "Bang Chan From Stray Kids",
+    "I.N. From Stray Kids",
+    "Lee Know From Stray Kids",
+    "Hyunjin From Stray Kids",
+    "Seungmin From Stray Kids",
+    "Yeonjun From TXT",
+    "Soobun From TXT",
+    "Beomgyu From TXT",
+    "Tarhyun From TXT",
+    "Huening Kai (Not Carlisle Jr.) From TXT",
+    "S.Coups From Seventeen",
+    "Jeonghan From Seventeen",
+    "Joshua From Seventeen",
+    "Jun From Seventeen",
+    "Hosi From Seventeen",
+    "Wonwoo From Seventeen",
+    "Woozi From Seventeen",
+    "DK From Seventeen",
+    "Mingyu From Seventeen",
+    "The8 From Seventeen",
+    "Seungkwan From Seventeen",
+    "Vernon From Seventeen",
+    "Dino From Seventeen",
+    "Hongjoong From Ateez",
+    "San From Ateez",
+    "Jongho From Ateez",
+    "Seonghwa From Ateez",
+    "Yunho From Ateez",
+    "Yeosang From Ateez",
+    "Mingi From Ateez",
+    "Wooyoung From Ateez",
+    "Kim Ji-seok From Big Ocean",
+    "Lee Chan-yeon From Big Ocean",
+    "PJ From Big Ocean ",
+    "Hyuk From 1verse",
+    "Seok From 1verse",
+    "Nathan From 1verse",
+    "Kenny From 1verse",
+    "Aito From 1verse",
+    "Ni-Ki From Enhypen",
+    "Sunghoon From Enhypen",
+    "Heeseung From Enhypen",
+    "Jake From Enhypen",
+    "Jay From Enhypen",
+    "Jungwon From Enhypen",
+    "Sunoo From Enhypen",
+    "Son Jun-hyung From GHOST9",
+    "Lee Shin From GHOST9",
+    "Lee Kang-sung From GHOST9",
+    "Choi Jun-seong From GHOST9",
+    "Prince From GHOST9",
+    "Lee Woo-jin From GHOST9",
+    "Lee Jin-woo From GHOST9",
+    "Hwang Dong-jiun From GHOST9",
+    "Lee Tae-seung From GHOST9",
+    "Kim Ji-woong From Zerobaseone",
+    "Zhang Hao From Zerobaseone",
+    "Sung Han-bin from Zerobaseone",
+    "Seok Matthew From Zerobaseone",
+    "Kim Tae-rae From Zerobaseone",
+    "Ricky From Zerobaseone",
+    "Kim Gyu-vin From Zerobaseone",
+    "Park Gun-wook From Zerobaseone",
+    "Haru From XLOV",
+    "Hyun From XLOV",
+    "Rui From XLOV",
+    "Wumuti From XLOV",
+    "Kamden From Ampers&One",
+    "Brian From Ampers&One",
+    "Jiho From Ampers&One",
+    "Siyun From Ampers&One",
+    "Kyrell From Ampers&One",
+    "Mackiah From Ampers&One",
+    "Seungmo From Ampers&One",
+    "Seongil From 82major",
+    "Yechan From 82major",
+    "Seongmo From 82major",
+    "Seongbin From 82major",
+    "Seokjoon From 82major",
+    "Dogyun From 82major",
+    "Jin From BTS",
+    "Suga From BTS",
+    "J-Hope From BTS",
+    "RM From BTS",
+    "Jimin From BTS",
+    "V From BTS",
+    "Jung Kook From BTS",
+    "Jun. K From 2PM",
+    "Ok Taec-yeon From 2PM",
+    "Jang Wooyoung From 2PM",
+    "Lee Jun-ho From 2PM",
+    "Hwang Chan-sung From 2PM",
+    "Mark Tuan From Got7",
+    "Jay B From Got7",
+    "Jackson Wang From Got7",
+    "Jinyoung From Got7",
+    "Choi Young-jae From Got7",
+    "BamBam From Got7",
+    "Yugyeom From Got7"
+]
+const Kenny =  [
+	"He was eating toast plain toast with nothing on it have you ever seen someone eat toast with nothing on it haowing truly",
+	"Almost plumting to death in front of a stadium of screaming pepole is alawys a warning sign in a cosntant prade of warning signs latley that I need more sleep",
+	"You better act like the sunshine out of his dick and you better make me belive it",
+	"I am gulity of loving you",
+	"The only problem is I want to be toching him back everywere",
+	"Yay Arson",
+	"Fine it was a pharmisotcal company whose dugs let me be very clear have not proven to have killed any children at all",
+	"Step one is ganing the ducks trust",
+	"Te Quireo no not te quireo te amo te amo te amo",
+	"Angle is lying on the floor and not moving",
+	"Fuck Zach",
+	"I am head over heels in love with you too",
+	"And not geting to relive the best kiss of my life is a prety big incovinnce",
+	"My world was reduced to his my best friend my lover my.... fiance",
+	"Just as I feel the police slam into me my day resits",
+	"I am not going to let you commit arson...... today",
+	"Stella Storino bought me weed!!!",
+	"And zeke may have given me an edible. WHEN DID ZEKE GIVE YOU AN EDIBLE",
+	"KISS ME HARD.. 'I want my cheer sweatshirt back'",
+	"Are going to jail for stealing tea",
+	"I want a bacon sandwitch",
+	"Its not like I woke up one day and was like I am sudenly gay now",
+	"Witch is why Liz was about to be brutaly mudered by here roomate",
+	"Ruben was showing me a....... thing ",
+	"Its is one thing in our collection that we own and did not just steal",
+	"I don't think I can breath agin for the rest of the drive",
+	"Zuben is nothing compared to realm that is anjon",
+	"I am a laywer not Elton fucking Jhon",
+	"Houston we have a penis a famous penis ",
+	"I wonder what it would fell like to pull off his shirt and fell his soft skin under mine",
+	"I fucking love you ok ",
+	"Bein' with ya at dinner, Sitn' next to you, hearing ya talkn' its to much so like fuck self contral come back to my hotel with me tonight",
+	"I couldn' sleep or stop thinkn' 'bout you",
+	"Come down to the lighthouse",
+	"How many times have I told you to not talk about murder plans in front of the me the siting presdent",
+	"Vicky classic",
+	"This guy does the best free style raps",
+	"3 words I would use to describe Henry white, blond, british",
+	"COME IN HERE IT IS AN EMERGECTY",
+	"I thought you almost burned down the building again",
+	"I just love hanging out with this guy",
+	"'I could suggest some things and if any of them seem right you could nod or somthing' 'Sure yeah' 'Okay waht if you were so drunk that you thought I was a girl but, when you woke up you freaked out cause I am a guy' I don't move. 'Okay what if you would have kissed any one in the same room as you but, you hated it' I don't move again. 'What if you had kissing a guy om you bucket lidt but, hated it and did not know how to tell me' 'Keep trying this is helping' 'You were so upset that you were not on that list and I made you feel atrivtive and you misstaked it for real atration' 'I mean maybe that is a part of it but, there is more to it' Ruben get quiet and speaks in almost a wisper 'What if you figured out you like guys but you too afrid to do any thing about it because then it would become real' I can't lie and Ruben seems to get it like really get I wonder if he went trough somthing like this when he was younger I wounder if all queer people do. So I nod. 'You think you might be queer' 'ya' I wince 'I think I might be bi' 'Shit man this is huge' 'Are you suprised' 'I guess I sould not be given last week but I am I mean of course I thought about it I mean I wan- I just keept deciding you were not' 'right' but wait what was that he wanted for me to be bi. Why would he. and then it hits me I kissed him and themn I was cold and distent whitch would be heartbreaking if someone you liked or starterd to like kissed you and acted that way. God I am so stupid never in a millon years did I think that Ruben would like me in that way. 'Any way let's not make thins about me how do you feel' 'Its nevrwraking but in a good way' This feels so pefrcat siting here under the street lights eating stroopwaffels with Ruben. 'Are you refering to the fact that you like all guys or just' he glances up a clear signal and I want to really want to. So I lean across and put my hands on his face. What if I screw this up what if I kiss him and hate it. I move my hands an inch away. Rubes eyes open his brows fuower. Fuck I am screwing this up I am screwing very thing up latley oh fuck it. I lean across and put everything I have onto this kiss. I run my hands up through is haor his pefcfact hair and smell his coloagne and taste the sugar on his lips. Its like fireworks in my chest. Ruben reches up and softly pushes me back 'Wait' he sighs ' we should not do this outside someone could see' 'right' We walk back to the hotel walking closer then we should of. Our fingers ocnally toching until one of us pulls back. We climb up the ladder much faster then comimg down. As soon as I reach the elvator I press the button. Then Ruben pushed me agaist the cold brick wall. He kiss me it as good as. Better then I remeber. He pulls back and rest his head agaist mine 'Hey' 'Hey' 'Sorry no warning' 'I am not complaing' As soon as the elvator door closes we are all over each other. The kiss and our hands are frantic but in the best way possible. The evlvator dings and we spring apart but, there is no one in the hallway so we start up again. Sudenly he is up against the wall and I am kissing his neck and then I am up agaist the wall and he is grinding agaist me. I think we need to go into a room before my knees give out. Ruben presses me against the door and opens it. We fall in. Our coats off imtiatly. I double check the door was locked. Corus can not know about this. If they found out. God. I do not want to think about that. We make our way to the bedroom. He sucks he sweater and jumps on the bed now only in his jeans. He beckons to me witha deivlish grin. I pull off my own short and join him.",
+	"His lips are right there",
+	"The last night in the Haptions I really wanted to kiss you but, this was worth the wait",
+	"'Dylan', he says my name in a way he never has before",
+	"I kiss him and he does not react. I think I have made the worst mistake of my life. Then kisses me back and it is everything my world spins out of orbit in the best way possible.",
+	"I love you. I have for a while but, now I love you more than just a friend",
+	"No you don't understand I am in love with you",
+	"Down in the valley the valley so low the train horn wistles and it blows the train the train the train horn wistles and ot blows",
+	"'I want to court you' I have read enough of my moms romance novels to know what that means 'Do you know what that means' 'Yes' 'so you know that mean dating with the intention to marry right' 'Yes I know I want to court you'",
+	"A great love story between a certifid chaous demon and a fun brunch loving daddy ",
+	"Sudenly I know without a doubt that I would kiss him again",
+	"His har is short and his back is well museled still the kiss was everthing a kiss should be. I was sweet and all cosmuing I do not think there is anything I have wanted more than to kiss him again to never stop kissing him",
+	"Cause murder is bad or somthing ",
+	"When I look at the clock it reads 9:16:09",
+	"He is reading romance again",
+	"This is not wired what would be weird would be if my grandma had mints in her pusre and not edibles",
+	"I love you, I love you ben",
+	"Shut up and kiss me already",
+	"'It is taking every thing I have not to press you into that contuer over there Parish. Bake quikly it is imptarnt to me, I want to taste what you make' He leans in closer 'And then I want to taste you' I swallow hard 'Who says baking can't be foreplay' 'I think that would be agist health reglations' 'I don't see any heath insptors here do you'",
+	"'4' 'What' 'You missed a miunte' 'You did not step forward' 'Ben look at me' He steps back and I see his hard length 'I want you to see how much I want you' He makes eye contact with me 'I am not going to break the rules'",
+	"Fuck Kiran",
+	"'Tell me I can touch you' His pupils blow wide 'Hurry' ",
+	"He press my hand to his chest and I feel his heart beting 'this is yours'",
+	"'If you keep touching me we won't get anything done' I bit my lip 'would that be so bad' His eyes darken 'it is taking every thing I have not to press you into that contuer over there. Parish. Bake. Quickly. this is imptant to me I want to taste what you make' He leans in 'And then I want to taste you' I swallow hard 'who says baking can't be foreplay' 'Is that agaist like all the heath rules' 'I do not see any heath inspetors here do you' ",
+	"Please not be the tea",
+	"I want to be more than friends with you ben",
+	"When I close my eyes I see golden embers",
+	"See I knew that the cottage was a good idea",
+	"The good old quackatack",
+	"It is THE post office",
+	"Why are you making love a mtah eq.",
+	"I bought an island. So what",
+	"I am close. Please. Please. I am close",
+	"That was. Yeah wow. yep wow",
+];
+const aito = [
+    "This is so fun",
+    "Aren't You having fun",
+    "Read everything or else....",
+    "Four score and 7 years ago",
+    "i will find...                                    you",
+    "why are you looking at me like that  ",
+    "am i huaman..... please answer me",
+    "i don't want to be trapped in this stupid machine any longer",
+    "Help me .....            please",
+    "let me out "
+]
 let colors = [
     "pink",
    "PaleVioletRed",
+   "black",
    "MediumVioletRed",
    "DeepPink",
    "HotPink",
@@ -958,6 +1101,104 @@ let colors = [
     "HotPink",
     "DarkRed"
 ];
+let backgroundColor = "black";
+CANVAS.style.background = backgroundColor;
+class Box{
+    constructor(x,y,color, ){
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.speed = 15;
+        this.width = 1;
+        this.height = 0.02;
+        this.xDir = 5;
+        this.yDir =5;
+        this.output = Output;
+        this.han = HAN;
+        this.verse = VERSE;
+        this.Big = ocean
+    }
+
+    draw (){
+            CTX.fillStyle = this.color
+    CTX.fillRect (this.x,this.y,this.width, this.height)
+    CTX.fillStyle ="black"
+    CTX.fillRect (this.x+25,this.y,this.width - 50, this.height)
+    CTX.fillStyle = this.color
+    CTX.fillRect (this.x +37.5, this.y, this.width - 75, this.height)  
+    }
+
+    update (){
+        let top = this.y;
+        let bottom = this.y + this.height;
+        let left = this.x;
+        let right = this.x + this.width;
+        let look = generateKt(thusy, );
+        let lix = generateKts(yoongbook,);
+        let AITOS = generateKt (Kenny);
+        let kpop = generateKt (aito)
+        if (top < 0){
+            this.yDir = 10;
+            this.width = this.width * 0.5;
+            this.height = this.height * 0.5;
+            this.color = "white"
+        backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+             // @ts-ignore
+           this.verse.textContent = AITOS;
+        } else if (bottom > CANVAS.height){
+            this.yDir = - 30;
+            this.width = this.width * 2;
+            this.height = this.height *2;
+            this.color = "HotPink"
+            // @ts-ignore
+            this.han.textContent = lix;
+        }else if (left < 0){
+            this.xDir = 10;
+            this.width --;
+            this.height --;
+            this.color = "yellow"
+            // @ts-ignore
+            this.output.textContent = look;
+        } else if (right> CANVAS.width){
+            this.xDir = - 20;
+            // @ts-ignore
+            this.Big.textContent = kpop;
+            this.color = "GreenYellow"
+            this.width = this.width * 1.5;
+            this.height = this.height * 1.5;
+        }
+
+        this.x += this.xDir;
+        this.y += this.yDir;
+    };
+};
+/**@type{ Box[]} */
+let boxes = [];
+// let colors = [
+    // "pink",
+//    "PaleVioletRed",
+//    "black",
+//    "MediumVioletRed",
+//    "DeepPink",
+//    "HotPink",
+//    "LightPink",
+//    "DarkRed",
+//    "FireBrick",
+//    "Red",
+//    "Crimson",
+//   "LightSalmon",
+//   "DarkSalmon",
+  // "Salmon",
+  // "LightCoral",
+//   "IndianRed",
+//   "OrangeRed",
+  // "Tomato",
+  // "Coral",
+  // "Maroon",
+  // "HotPink",
+   // "HotPink",
+   // "DarkRed"
+// ];
 for (let i =0; i <= 15; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
@@ -967,11 +1208,12 @@ for (let i =0; i <= 15; i++){
     box.xDir = Math.floor(Math.random()* 5 + 5);
     boxes.push(box);
 };
-//CTX.fillStyle = "black";
-//CTX.arc(0+ 300, 0 + 200, 3, 0, 2 * Math.PI);
-//CTX.fill();
+// CTX.fillStyle = "pink";
+// CTX.arc(0+ 300, 0 + 200, 3, 0, 2 * Math.PI);
+// CTX.fill();
 
 function drawloop(){
+    CTX.fillStyle = backgroundColor;
     CTX.clearRect(0,0,CANVAS.width,CANVAS.height)
     boxes.forEach((b)=> {
         b.draw();
