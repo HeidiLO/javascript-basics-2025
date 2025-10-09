@@ -1174,31 +1174,7 @@ class Box{
 };
 /**@type{ Box[]} */
 let boxes = [];
-// let colors = [
-    // "pink",
-//    "PaleVioletRed",
-//    "black",
-//    "MediumVioletRed",
-//    "DeepPink",
-//    "HotPink",
-//    "LightPink",
-//    "DarkRed",
-//    "FireBrick",
-//    "Red",
-//    "Crimson",
-//   "LightSalmon",
-//   "DarkSalmon",
-  // "Salmon",
-  // "LightCoral",
-//   "IndianRed",
-//   "OrangeRed",
-  // "Tomato",
-  // "Coral",
-  // "Maroon",
-  // "HotPink",
-   // "HotPink",
-   // "DarkRed"
-// ];
+
 for (let i =0; i <= 15; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
