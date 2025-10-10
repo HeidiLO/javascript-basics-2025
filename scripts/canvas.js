@@ -1176,7 +1176,43 @@ class Box{
 };
 /**@type{ Box[]} */
 let boxes = [];
+class Circle {
+    constructor(x, y, radius, dx, dy, color) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.dx = dx; // horizontal speed
+        this.dy = dy; // vertical speed
+        this.color = color;
+    }
 
+    update() {
+        // Bounce off left/right walls
+        if (this.x - this.radius < 0 || this.x + this.radius > CANVAS.width) {
+            this.dx = -this.dx;
+            this.color = "GreenYellow";
+        }
+        // Bounce off top/bottom walls
+        if (this.y - this.radius < 0 || this.y + this.radius > CANVAS.height) {
+            this.dy = -this.dy;
+            this.color = "yellow";
+        }
+        // Move the circle
+        this.x += this.dx;
+        this.y += this.dy;
+
+    }
+       draw() {
+        CTX.beginPath();
+        CTX.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        CTX.fillStyle = this.color;
+        CTX.fill();
+        CTX.closePath();
+    }
+}
+
+let Circle1 = new Circle(100, 100, 30, 4, 4, colors[Math.floor(Math.random() * colors.length)]);
+let Circle2 = new Circle(200, 200, 20, -3, 3, colors[Math.floor(Math.random() * colors.length)]);
 for (let i =0; i <= 15; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
@@ -1191,14 +1227,24 @@ for (let i =0; i <= 15; i++){
 // CTX.fill();
 
 function drawloop(){
-    CTX.clearRect(0,0,CANVAS.width,CANVAS.height)
+    CTX.clearRect(0,0,CANVAS.width,CANVAS.height);
      CTX.fillStyle = backgroundColor; 
     CTX.fillRect(0, 0, CANVAS.width, CANVAS.height); 
     boxes.forEach((b)=> {
         b.draw();
         b.update();
     });
+    Circle1.draw();
+    Circle1.update();
+    Circle2.draw();
+    Circle2.update();
+CTX.fillStyle = backgroundColor;
+CTX.arc(0+ 300, 0 + 200, 30, 0, 2 * Math.PI);
+CTX.fill();
+    // colors[Math.floor(Math.random()*colors.length)];
+
         CTX.fillStyle = backgroundColor;
+
     requestAnimationFrame(drawloop);
 };
 requestAnimationFrame(drawloop);
