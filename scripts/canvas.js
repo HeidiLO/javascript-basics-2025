@@ -1190,7 +1190,7 @@ class Circle {
         // Bounce off left/right walls
         if (this.x - this.radius < 0 || this.x + this.radius > CANVAS.width) {
             this.dx = -this.dx;
-            this.color = "GreenYellow";
+            this.color = "black";
         }
         // Bounce off top/bottom walls
         if (this.y - this.radius < 0 || this.y + this.radius > CANVAS.height) {
