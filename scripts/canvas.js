@@ -1229,7 +1229,11 @@ for (let i =0; i <= 15; i++){
 function drawloop(){
     CTX.clearRect(0,0,CANVAS.width,CANVAS.height);
      CTX.fillStyle = backgroundColor; 
-    CTX.fillRect(0, 0, CANVAS.width, CANVAS.height); 
+CTX.fillRect(0, 0, CANVAS.width, CANVAS.height); 
+     CTX.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+CTX.rect(250, 150, WIDTH/2, HEIGHT/2);
+CTX.fill();
+
     boxes.forEach((b)=> {
         b.draw();
         b.update();
@@ -1241,6 +1245,7 @@ function drawloop(){
 CTX.fillStyle = backgroundColor;
 CTX.arc(0+ 300, 0 + 200, 30, 0, 2 * Math.PI);
 CTX.fill();
+
     // colors[Math.floor(Math.random()*colors.length)];
 
         CTX.fillStyle = backgroundColor;
