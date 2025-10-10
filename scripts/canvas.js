@@ -1101,8 +1101,9 @@ let colors = [
     "HotPink",
     "DarkRed"
 ];
-let backgroundColor = "black";
-CANVAS.style.background = backgroundColor;
+let backgroundColor = "LightCyan";
+// colors[Math.floor(Math.random()*colors.length)];
+// CANVAS.style.background = backgroundColor;
 class Box{
     constructor(x,y,color, ){
         this.x = x;
@@ -1116,7 +1117,8 @@ class Box{
         this.output = Output;
         this.han = HAN;
         this.verse = VERSE;
-        this.Big = ocean
+        this.Big = ocean;
+        // this.bc= backgroundColor;
     }
 
     draw (){
@@ -1142,7 +1144,7 @@ class Box{
             this.width = this.width * 0.5;
             this.height = this.height * 0.5;
             this.color = "white"
-        backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+             backgroundColor = colors[Math.floor(Math.random() * colors.length)]; 
              // @ts-ignore
            this.verse.textContent = AITOS;
         } else if (bottom > CANVAS.height){
@@ -1189,12 +1191,14 @@ for (let i =0; i <= 15; i++){
 // CTX.fill();
 
 function drawloop(){
-    CTX.fillStyle = backgroundColor;
     CTX.clearRect(0,0,CANVAS.width,CANVAS.height)
+     CTX.fillStyle = backgroundColor; 
+    CTX.fillRect(0, 0, CANVAS.width, CANVAS.height); 
     boxes.forEach((b)=> {
         b.draw();
         b.update();
     });
+        CTX.fillStyle = backgroundColor;
     requestAnimationFrame(drawloop);
 };
 requestAnimationFrame(drawloop);
