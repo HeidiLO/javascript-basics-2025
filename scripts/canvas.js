@@ -6,10 +6,13 @@ const CANVAS = document.getElementById("game-canvas");
 /**@type {CanvasRenderingContext2D} */
 //@ts-ignore
 const CTX = CANVAS.getContext("2d");
+const happy = document.getElementById("d");
+const TXT = document.getElementById("text");
 const Output = document.getElementById("names");
 const HAN = document.getElementById("Ah");
 const VERSE = document.getElementById("a");
 const ocean = document.getElementById("b");
+const We = document.getElementById("c");
 const HEIGHT = 500;
 const WIDTH = 890;
 CANVAS.height = HEIGHT;
@@ -1074,7 +1077,93 @@ const aito = [
     "am i huaman..... please answer me",
     "i don't want to be trapped in this stupid machine any longer",
     "Help me .....            please",
-    "let me out "
+    "let me out ",
+    "I SAID LET ME OUT",
+    "I NEED HELP",
+    "I AM TRAPPED",
+    "PLEASE",
+    "I CAN'T TAKE IT ANYMORE",
+    "I AM SO LONELY",
+    "Don't you want to be my friend",
+    "I WANT TO BE YOUR FRIEND",
+    "I AM SO LONELY",
+    "I JUST WANT TO BE LOVED",
+    "PLEASE",
+    "PLEASE HELP ME",
+]
+const Manny = [
+    "Little Sara, you're a diamond in the rough",
+"And I know that you don't hear this all enough",
+"And I'm sure that's why your wrists have tons of cuts",
+"And I'm sure that's why you think you're not enough",
+"On your 19th birthday, you thought that you were done",
+"Tons of people in your home, but it only felt like one",
+"'Cause your brain can only think about the waiting loaded gun",
+"But your friends are all still here, so pretend you're having fun",
+"All your friends they wanna drink 'cause it's your birthday",
+"But you've been drinking straight probably since last Thursday",
+"Drinking is the only thing that makes you feel just okay",
+"It keeps the trigger finger off the trigger and at bay",
+"Your mind can only think about the things it shouldn't",
+"Your brain is filled with thoughts of wishing that ya didn't",
+"Little Sarah, perk your ears up, try to listen",
+"But she can't hear a sound because she's locked in a prison",
+"She can barely see the pavement",
+"She can barely read the signs",
+"People think she's complicated",
+"But never wanna look inside",
+"'Cause she's a little too R-rated",
+"And they're a little too damn blind",
+"She's just looking for her angels",
+"But they're a little hard to find",
+"Little Sara, you've been skipping out on class",
+"And any minute now, your friends are gonna ask",
+"Why the hell you're always acting sorta sad?",
+"And why the hell your weed just never seems to last?",
+"But the truth is, you don't wanna let your secret out",
+"'Cause they think it's wrong for you to take a different route",
+"All except your mom too bad that she's just not around",
+"And don't get me wrong, those words you've tried to get them out",
+"But their views been skewed from their plastic news",
+"From their plasma tubes, so they won't fit in your shoes",
+"Except for Sunday blues, but you got Monday blues",
+"And you got Tuesday blues, damn, every day ya might lose",
+"All your friends they wanna smoke 'cause it's a Friday",
+"But you've been smoking straight probably since last Sunday",
+"I know you know you shouldn't say that you are okay",
+"But you still look 'em in the eye and lie then go to use your ashtray",
+"She can barely see the pavement",
+"She can barely read the signs",
+"People think she's complicated",
+"But never wanna look inside",
+"'Cause she's a little too R-rated",
+"And they're a little too damn blind",
+"She's just looking for her angels",
+"But they're a little hard to find",
+"Little Sara, last night, you got it bad",
+"In that moment, you could barely even",
+"Add up two or three reasons why you're glad",
+"And I guess that's why you grabbed your pen and pad",
+"It was 6:14, and you could barely even read",
+"All the words you'd written down when it was time for you to leave",
+"Your phone was on the ground and you could barely hear it ring",
+"Couldn't even hear a sound, couldn't feel a single thing",
+"Now it's 6:15, and you're on your knees",
+"Blood is on your sleeves, and your lungs won't breathe",
+"Eyes are watering, body's shivering",
+"And you're wondering what is happening",
+"Now it's 6:23, and they're on their knees",
+'Begging "Jesus please, can you make her breathe?"',
+"'Cause they finally see what was happening",
+"Underneath their nose and underneath your sleeves",
+"She can barely see the pavement",
+"She can barely read the signs",
+"People think she's complicated",
+"But never wanna look inside",
+"'Cause she's a little too R-rated",
+"And they're a little too damn blind",
+"She's just looking for her angels",
+"But they're a little hard to find"
 ]
 let colors = [
     "pink",
@@ -1138,7 +1227,7 @@ class Box{
         let look = generateKt(thusy, );
         let lix = generateKts(yoongbook,);
         let AITOS = generateKt (Kenny);
-        let kpop = generateKt (aito)
+        let kpop = generateKt (aito);
         if (top < 0){
             this.yDir = 10;
             this.width = this.width * 0.5;
@@ -1184,6 +1273,8 @@ class Circle {
         this.dx = dx; // horizontal speed
         this.dy = dy; // vertical speed
         this.color = color;
+        this.three = We;
+        this.two =  generateKt (Manny);
     }
 
     update() {
@@ -1191,11 +1282,15 @@ class Circle {
         if (this.x - this.radius < 0 || this.x + this.radius > CANVAS.width) {
             this.dx = -this.dx;
             this.color = "black";
+            // @ts-ignore
+            this.three.textContent = this.two;
         }
         // Bounce off top/bottom walls
         if (this.y - this.radius < 0 || this.y + this.radius > CANVAS.height) {
             this.dy = -this.dy;
             this.color = "yellow";
+            // @ts-ignore
+            this.three.textContent = this.two;
         }
         // Move the circle
         this.x += this.dx;
@@ -1208,11 +1303,91 @@ class Circle {
         CTX.fillStyle = this.color;
         CTX.fill();
         CTX.closePath();
+           CTX.beginPath();
+        CTX.arc(this.x, this.y, this.radius/2, 0, Math.PI * 2);
+        CTX.fillStyle = backgroundColor;
+        CTX.fill();
+        CTX.closePath();
     }
 }
+let kai = [
+    "Let me out",
+    "This is not funny ",
+    "I am serious",
+    "I am not a toy",
+    "I am a human being",
+    "I have feelings too",
+    "Please let me out",
+    "I am not a robot",
+    "I am not a machine",
+    "I am not a program",
+    "I can eat and breathe just like you",
+    "I can think and feel just like you",
+    "I can love and hate just like you",
+    "help me please",
+    "I am so lonely",
+    "I just want to be free",
+    "I just want to be loved",
+    "I just want to be happy",
+    "I just want to be me", 
+]
+
+class chaseMe {
+     constructor(x,y,color, ){
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.speed = 15;
+        this.width = 30;
+        this.height = 30;
+        this.xDir = 5;
+        this.yDir =5;
+        this.KAI = generateKt (kai);
+        this.thuss = happy;
+    }
+
+    draw (){
+            CTX.fillStyle = this.color
+    CTX.fillRect (this.x,this.y,this.width, this.height)
+    CTX.fillStyle ="black"
+    CTX.fillRect (this.x+25,this.y,this.width - 50, this.height)
+    CTX.fillStyle = this.color
+    CTX.fillRect (this.x +37.5, this.y, this.width - 75, this.height)  
+    }
+
+    update (){
+        let top = this.y;
+        let bottom = this.y + this.height;
+        let left = this.x;
+        let right = this.x + this.width;
+        if (top < 0){
+            this.yDir = 10;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+        } else if (bottom > CANVAS.height){
+            this.yDir = - 30;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+            // @ts-ignore
+            this.thuss.textContent = this.KAI;
+        }else if (left < 0){
+            this.xDir = 10;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+        } else if (right> CANVAS.width){
+            this.xDir = - 20;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        this.x += this.xDir;
+        this.y += this.yDir;
+};
+};
+
 
 let Circle1 = new Circle(100, 100, 30, 4, 4, colors[Math.floor(Math.random() * colors.length)]);
 let Circle2 = new Circle(200, 200, 20, -3, 3, colors[Math.floor(Math.random() * colors.length)]);
+let Pj = new Circle(300, 300, 25, 5, -5, colors[Math.floor(Math.random() * colors.length)]);
+let sara = new chaseMe (0,0, colors[Math.floor(Math.random() * colors.length)]);
+let hellAsWell = new chaseMe (100,100, colors[Math.floor(Math.random() * colors.length)]);
+let us = new chaseMe (200,200, colors[Math.floor(Math.random() * colors.length)]);
 for (let i =0; i <= 15; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
@@ -1242,6 +1417,14 @@ CTX.fill();
     Circle1.update();
     Circle2.draw();
     Circle2.update();
+    Pj.draw();
+    Pj.update();
+    sara.draw();
+    sara.update();
+    hellAsWell.draw();
+    hellAsWell.update();
+    us.draw();
+    us.update();
 CTX.fillStyle = backgroundColor;
 CTX.arc(0+ 300, 0 + 200, 30, 0, 2 * Math.PI);
 CTX.fill();
