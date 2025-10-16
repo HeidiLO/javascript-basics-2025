@@ -1381,10 +1381,31 @@ class chaseMe {
 };
 };
 
+class Itgo {
+    constructor(x,y,color, ){
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.width = 600;
+        this.height = 400;
+    }   
+    draw (){
+            CTX.fillStyle = this.color
+    CTX.fillRect (this.x,this.y,this.width, this.height)
+    }
+    update (){
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+    }
 
+}
+let Angel = new Itgo (150,50, colors[Math.floor(Math.random() * colors.length)]);
+let Jon = new Itgo (50,150, colors[Math.floor(Math.random() * colors.length)]);
+let Zach = new Itgo (250,150, colors[Math.floor(Math.random() * colors.length)]);
+let Ruben = new Itgo (150,250, colors[Math.floor(Math.random() * colors.length)]);
 let Circle1 = new Circle(100, 100, 30, 4, 4, colors[Math.floor(Math.random() * colors.length)]);
 let Circle2 = new Circle(200, 200, 20, -3, 3, colors[Math.floor(Math.random() * colors.length)]);
 let Pj = new Circle(300, 300, 25, 5, -5, colors[Math.floor(Math.random() * colors.length)]);
+let fuckoff = new Circle(400, 400, 15, -4, -4, colors[Math.floor(Math.random() * colors.length)]);
 let sara = new chaseMe (0,0, colors[Math.floor(Math.random() * colors.length)]);
 let hellAsWell = new chaseMe (100,100, colors[Math.floor(Math.random() * colors.length)]);
 let us = new chaseMe (200,200, colors[Math.floor(Math.random() * colors.length)]);
@@ -1404,10 +1425,20 @@ for (let i =0; i <= 15; i++){
 function drawloop(){
     CTX.clearRect(0,0,CANVAS.width,CANVAS.height);
      CTX.fillStyle = backgroundColor; 
-CTX.fillRect(0, 0, CANVAS.width, CANVAS.height); 
-     CTX.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+CTX.fillRect(0, 0, CANVAS.width, CANVAS.height);
+Angel.draw();
+Angel.update();
+Jon.draw();
+Jon.update();
+Zach.draw();
+Zach.update();
+Ruben.draw();
+Ruben.update();
+CTX.fillStyle = colors[Math.floor(Math.random() * colors.length)];
 CTX.rect(250, 150, WIDTH/2, HEIGHT/2);
 CTX.fill();
+
+
 
     boxes.forEach((b)=> {
         b.draw();
@@ -1417,6 +1448,8 @@ CTX.fill();
     Circle1.update();
     Circle2.draw();
     Circle2.update();
+    fuckoff.draw();
+    fuckoff.update();
     Pj.draw();
     Pj.update();
     sara.draw();
@@ -1428,9 +1461,6 @@ CTX.fill();
 CTX.fillStyle = backgroundColor;
 CTX.arc(0+ 300, 0 + 200, 30, 0, 2 * Math.PI);
 CTX.fill();
-
-    // colors[Math.floor(Math.random()*colors.length)];
-
         CTX.fillStyle = backgroundColor;
 
     requestAnimationFrame(drawloop);
