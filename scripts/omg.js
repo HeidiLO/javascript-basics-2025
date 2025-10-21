@@ -1219,3 +1219,28 @@ Hyunjin.addEventListener("click", function(){
         let Hyunjin = generatet(felix, bangChan, hyunjin, In, LeeKnow );
     output.textContent = Hyunjin;
 })
+let lee = document.getElementById("Shinny");
+let Know = [
+    "Shinny is Han becuase Han looks like a squirrel and when does are distracted by squirrels, you might say squirel and that is a bit on the nose so I say shinny as its a distraction",
+    "Noelle is Felix because Noelle had blond hair in the same cut that Felix has, and would style it the same way",
+    "I.N. is LALALA becuase I.N. is the youngest and BBNO$ has down a many collabs with Yung Gravy, BBNO$ is also known becuase of his song LALALA",
+    "Bang Chan is Lucas becuase I once read a comic where there was an Altratlian names Lucas and Bang Chan is Altratlian",
+    "Lee Know is Mortica from the Addams family bcause we have a cat name Mortica and Lee Know gives off the same vibe as her",
+    "Hyunjin is tennis ball becuase for the Cermony Music video he had a buzz cut that was dyed a bright green that is the same as a tennis ball",
+    "Seugmin is May becase I when counting and naming the members in Stray Kids if I forgot anyone it was Seugmin and in elementary school I would forget that the month of May exsited",
+    "Chanbin is Jon from ITGO cause he gives off the same vibe as Jon",
+    "Hyungkai is Carlisle Jr. becuase both have light blond hair and at the TXT concert my mom and sister did not know the mambers names and they called Huening Kai Carlisle Jr. after the Twilight character",
+    "Kenny is Hihi becuase that is my nickmame and Kenny is my spirt animal",
+    "Dexter is Payu becuase Dex cut his hair and it was the same hair cut that Payu has in Love Is In The Air",
+    "Recpie is Reese becuase I mean think about it",
+    "Piper is 3.14159 because if you shorten her name you get Pi and 3.14159 is the value of Pi",
+    "Key is Frankie becuase they had a nickname frabkie and the last sounds of that is like the sounds of key",
+    "Cressida is Crepe because they both can not hear things but also I mean they can't walk",
+    "Alex is Bald man becuase Alex is bald and that is it",
+    "Kendra is little shit becase well... she is little and also... you know.",
+    "Hice is houses becuase if you think about it we say mouse and mice so why would we not also say hice for houses, because it is not like we woudl call mice mouses insted you know, also it makes people really confused",
+];
+lee.addEventListener("click", function(){
+        let LeeKnow = getRandomWord(Know);
+    output.textContent = LeeKnow;
+})
