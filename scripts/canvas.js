@@ -1529,7 +1529,7 @@ let fuckoff = new Circle(400, 400, 15, -4, -4, colors[Math.floor(Math.random() *
 let sara = new chaseMe (0,0, colors[Math.floor(Math.random() * colors.length)]);
 let hellAsWell = new chaseMe (100,100, colors[Math.floor(Math.random() * colors.length)]);
 let us = new chaseMe (200,200, colors[Math.floor(Math.random() * colors.length)]);
-for (let i =0; i <= 15; i++){
+for (let i =0; i <= 200; i++){
     let color = colors[Math.floor(Math.random()*colors.length)]
     let box = new Box(0,0, color);
     box.x = Math.random() * CANVAS.width - 100;
