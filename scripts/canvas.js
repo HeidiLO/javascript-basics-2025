@@ -1310,6 +1310,23 @@ let colors = [
     "DarkSlateGray",
     "Black",
 ];
+let oml = document.getElementById("ohno");
+let iHate =[
+    "I hate you",
+    "Go away",
+    "Leave me alone",
+    "You are not welcome here",
+    "Get lost",
+    "I never want to see you again",
+    "You are a terrible person",
+    "I can't stand you",
+    "You make me sick",
+    "I wish you were dead",
+    "I hope you suffer",
+    "You are the worst",
+    "I despise you",
+    "You are a burden",
+]
 let backgroundColor = "LightCyan";
 // colors[Math.floor(Math.random()*colors.length)];
 // CANVAS.style.background = backgroundColor;
@@ -1394,23 +1411,27 @@ class Circle {
         this.dy = dy; // vertical speed
         this.color = color;
         this.three = We;
+        this.four = oml;
         this.two =  generateKt (Manny);
+        this.one = generateKt (iHate);
     }
 
     update() {
         // Bounce off left/right walls
         if (this.x - this.radius < 0 || this.x + this.radius > CANVAS.width) {
             this.dx = -this.dx;
-            this.color = "black";
+            this.color = colors[Math.floor(Math.random() * colors.length)];
             // @ts-ignore
             this.three.textContent = this.two;
         }
         // Bounce off top/bottom walls
         if (this.y - this.radius < 0 || this.y + this.radius > CANVAS.height) {
             this.dy = -this.dy;
-            this.color = "yellow";
+            this.color = colors[Math.floor(Math.random() * colors.length)];
             // @ts-ignore
             this.three.textContent = this.two;
+            // @ts-ignore
+            this.four.textContent = this.one;
         }
         // Move the circle
         this.x += this.dx;
