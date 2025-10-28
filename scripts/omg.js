@@ -1244,3 +1244,14 @@ lee.addEventListener("click", function(){
         let LeeKnow = getRandomWord(Know);
     output.textContent = LeeKnow;
 })
+let fun = document.getElementById("bye");
+let frfr = [
+    "Did you know that the date most people think Pompai was destoryed on is wrong?",
+    "Did you know that humans are the entire reason that lemons exsit?",
+    "Did you know that bannas are berries but bannans trees are herbs?",
+    "Did you know that you have the most amount of brain cells compared to mass of your brain when you are five years old?",
+]
+fun.addEventListener("click", function(){
+        let FunFacts = getRandomWord(frfr);
+    output.textContent = FunFacts;
+})
